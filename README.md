@@ -71,11 +71,11 @@ streamlit run app.py
 
 ## 🙌 Team & Acknowledgments
 
-Developed by David Rivero and team for a final Business Analytics project.  
+Developed by Luana, Angie, Jhonatan, Juan and David for a final Business Analytics project.  
 Powered by open datasets from Kaggle and open-source tools.
 
 ---
 
 ## 📬 Contact
 
-Have questions or feedback? Reach out via GitHub or connect on [LinkedIn](https://www.linkedin.com).
+Have questions or feedback? Reach out via lambton email.
