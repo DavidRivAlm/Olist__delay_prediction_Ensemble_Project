@@ -28,8 +28,8 @@ This project is a machine learning application designed to predict whether a pro
 
 ### 1. Clone this repository
 ```bash
-git clone https://github.com/your-username/olist-delay-prediction.git
-cd olist-delay-prediction
+git clone https://github.com/DavidRivAlm/Olist__delay_prediction_Ensemble_Project.git
+cd Olist__delay_prediction_Ensemble_Project
 ```
 
 ### 2. Install dependencies
@@ -47,7 +47,7 @@ streamlit run app.py
 ## 📁 Project Structure
 
 ```
-📦 olist-delay-prediction
+📦 Olist__delay_prediction_Ensemble_Project
 ├── app.py                            # Streamlit app
 ├── voting_ensemble_model.pkl        # Saved ensemble model
 ├── Olist_Cleaned_Real_Dataset.csv   # Cleaned dataset with labels + encodings
@@ -71,11 +71,7 @@ streamlit run app.py
 
 ## 🙌 Team & Acknowledgments
 
-Developed by Luana, Angie, Jhonatan, Juan and David for a final Business Analytics project.  
+Developed by **Luana, Angie, Jonathan, Juan, and David** for a final Business Analytics project.  
 Powered by open datasets from Kaggle and open-source tools.
 
 ---
-
-## 📬 Contact
-
-Have questions or feedback? Reach out via lambton email.
