@@ -32,6 +32,14 @@ category_mapping = dict(
     )
 )
 
+# ✅ Create mapping for seller states
+seller_mapping = dict(
+    zip(
+        df['seller_state'].astype('category').cat.categories,
+        df['seller_state'].astype('category').cat.codes
+    )
+)
+
 # ---------------------------
 # STREAMLIT APP UI
 # ---------------------------
@@ -62,6 +70,10 @@ customer_state_encoded = state_mapping[state_label]
 category_label = st.selectbox("Product Category", list(category_mapping.keys()))
 product_category_encoded = category_mapping[category_label]
 
+# ✅ Dropdown: Seller State
+seller_label = st.selectbox("Seller State", list(seller_mapping.keys()))
+seller_state_encoded = seller_mapping[seller_label]
+
 # ---------------------------
 # PREDICTION
 # ---------------------------
@@ -71,7 +83,8 @@ if st.button("Predict Delay"):
         'shipping_days': shipping_days,
         'product_weight_g': product_weight_g,
         'customer_state_encoded': customer_state_encoded,
-        'product_category_encoded': product_category_encoded
+        'product_category_encoded': product_category_encoded,
+        'seller_state_encoded': seller_state_encoded
     }])
 
     prediction = model.predict(input_data)[0]
